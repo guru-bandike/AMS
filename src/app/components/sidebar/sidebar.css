@@ -1,0 +1,31 @@
+:host {
+  /* display: block; */
+  width: 160px;
+  /* flex-shrink: 1; */
+}
+
+.sidebar {
+  height: 100%;
+  background: #1976d2;
+}
+
+nav {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 5px;
+}
+
+li {
+  color: #fff;
+  font-weight: 700;
+  padding: 15px 10px 15px 25px;
+  background-color: #0d3761;
+  border-radius: 10px;
+  cursor: pointer;
+}
