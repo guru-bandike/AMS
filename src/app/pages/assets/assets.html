@@ -1,1 +1,10 @@
-<p>ASSETS PAGE</p>
+<p class="page">ASSETS PAGE</p>
+<div class="assets">
+  @for (item of assets; track item.id) {
+    <div class="card">
+      <p>Asset Name: {{ item.name }}</p>
+      <p>Assigned To: {{ item.assignedTo }}</p>
+      <p>Status: {{ item.status }}</p>
+    </div>
+  }
+</div>

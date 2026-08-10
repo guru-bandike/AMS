@@ -21,3 +21,14 @@ body {
     'Helvetica Neue',
     sans-serif;
 }
+
+/* Utilities */
+.page {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px;
+  background-color: rgba(181, 137, 223, 0.475);
+  color: yellow;
+  text-shadow: 1px 1px #000;
+}

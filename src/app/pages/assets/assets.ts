@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { AssetService } from '../../services/asset-service';
 
 @Component({
   selector: 'app-assets',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './assets.html',
   styleUrl: './assets.css',
 })
-export class Assets {}
+export class Assets {
+  private assetService = inject(AssetService);
+
+  assets = this.assetService.getAssets();
+}
