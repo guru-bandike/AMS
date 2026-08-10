@@ -5,6 +5,7 @@
 }
 
 .sidebar {
+  border-top: 1px dashed yellow;
   height: 100%;
   background: #1976d2;
 }
@@ -25,7 +26,13 @@ li {
   color: #fff;
   font-weight: 700;
   padding: 15px 10px 15px 25px;
-  background-color: #0d3761;
   border-radius: 10px;
   cursor: pointer;
+  border: 1px solid yellowgreen;
+  transition: 500ms;
+}
+
+li.selected {
+  background-color: #0d3761;
+  color: yellow;
 }
