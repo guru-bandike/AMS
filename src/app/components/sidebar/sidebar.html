@@ -1,8 +1,8 @@
 <aside class="sidebar">
   <nav>
     <ul>
-      @for (item of menuItems; track $index) {
-        <li>
+      @for (item of menuItems; track item.id) {
+        <li [routerLink]="item.route" routerLinkActive="selected">
           {{ item.label }}
         </li>
       }
